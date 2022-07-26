@@ -5,14 +5,14 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body{
-  box-sizing: border-box;
   font-family: 'Source sans pro';
 }
 
-header{
+body {
+  box-sizing: border-box;
+}
+
+header {
   position: fixed;
   display: flex;
   flex-flow: row wrap;
@@ -21,9 +21,11 @@ header{
   width: 100vw;
 
   background-color: white;
+  box-shadow: 0 10px 30px rgb(0, 0, 0);
 }
 
-.centralizado{
+/*barra de navegação do site*/
+.centralizado {
   display: flex;
   flex-flow: row wrap;
 
@@ -37,55 +39,55 @@ header{
   justify-content: space-between;
 }
 
-#principal{
+#principal {
   font-size: 2.2rem;
   color: rgb(46, 46, 46);
 }
 
-#principal span{
+#principal span {
   color: rgb(117, 152, 197);
 }
 
-.centralizado a{
+.centralizado a {
   text-decoration: none;
 }
 
-nav ul{
+nav ul {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
 }
 
-nav ul li{
+nav ul li {
   padding: 1rem;
 }
 
-nav ul li a{
+nav ul li a {
   color: grey;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
-.main{
+/* Capa do site */
+.main {
   width: 100vw;
 }
 
-.capa
-{
+.capa {
   display: flex;
   padding-top: 5.5rem;
 
   height: calc(100vh - 5.5rem);
   width: 100%;
 
-  background-size:cover ;
+  background-size: cover;
   background-position: center;
   background-image: url('/assets/img-fundo.jpg');
   align-items: center;
 }
 
-.eslogan{
+.eslogan {
   box-sizing: border-box;
-  
+
   height: 30vh;
   width: 45%;
 
@@ -96,14 +98,207 @@ nav ul li a{
   border-radius: 0.6rem;
   background-color: rgba(0, 156, 148, 0.726);
   text-align: center;
-  color:white;
+  color: white;
   line-height: 10vh;
 }
 
-.eslogan h1{
-font-size: 4rem;
+.eslogan h1 {
+  font-size: 4rem;
 }
 
-.eslogan p{
+.eslogan p {
   font-size: 2.5rem;
 }
+
+/* Titulos padrões */
+
+.apresentacao_titulos {
+  padding-top: 6rem;
+  height: 23vh;
+  width: 100%;
+
+  text-align: center;
+
+  color: rgb(65, 65, 65);
+}
+
+.apresentacao_titulos h2 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.apresentacao_titulos p {
+  font-size: 1.6rem;
+  line-height: 6rem;
+}
+
+.Alocamento{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.quartos_descricao {
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.quartos_desc_itens{
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  
+  width: calc((100% / 3) - 2px);
+  border-bottom:  solid 3px black;
+  
+}
+
+.quartos_desc_itens img{
+  width:calc((100%) - 5%);
+}
+
+.quartos_desc_itens a{
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  width: 80%;
+  font-size: 1.2rem;
+  padding: 20px;
+  
+}
+
+.sobre_descricao{
+  display: flex;
+  flex-flow: row wrap ;
+  justify-content: space-around;
+  margin: 0 auto;
+
+  width: 90%;
+  height: 50vh;
+}
+
+.itens{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 15vh;
+  width: calc(90% / 2); 
+  justify-content: space-between;
+
+}
+
+.objeto1{
+  width: 90%;
+}
+
+.objeto1 h3{
+  line-height: 3rem;
+}
+
+
+.objeto2{
+  width: 20%;
+  height: 100%;
+}
+
+.objeto2 img{
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+  background-color: rgb(82, 143, 97);
+}
+
+.container-rodape-1{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+width: 100%;
+}
+
+.tamanhos-r{
+  margin-top: 1rem;
+  width: calc((100%/4) - 10px);
+  height: 8rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  font-size: 1.2rem;
+
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.tamanhos-r img{
+  margin: 2rem;
+}
+
+.container-rodape-2{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 90%;
+  height: 5rem;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-top: solid rgb(29, 51, 35) 1px ;
+}
+
+
+/*pagina de quartos*/
+
+.capa-quartos{
+  padding-top: 5.5rem;
+
+  height: 17.2vh;
+  width: 100%;
+
+  background-image: url('/assets/img-fundo.jpg');
+  background-size: cover;
+
+}
+
+.quartos-container{
+  width: 100%;
+}
+
+.quartos-imagens{
+  width: 70%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-around;
+
+  margin-bottom: 5.5rem;
+}
+
+.quartos-imagens-definicoes{
+width: calc((100% / 3) - 5px ) ;
+}
+
+.quartos-defi h3{
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.listas-defi{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+main{padding-bottom: 2.4rem;}
