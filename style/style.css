@@ -81,7 +81,7 @@ nav ul li a {
 
   background-size: cover;
   background-position: center;
-  background-image: url('/assets/img-fundo.jpg');
+  background-image: url('../assets/img-fundo.jpg');
   align-items: center;
 }
 
@@ -263,7 +263,7 @@ width: 100%;
   height: 17.2vh;
   width: 100%;
 
-  background-image: url('/assets/img-fundo.jpg');
+  background-image: url('../assets/img-fundo.jpg');
   background-size: cover;
 
 }
